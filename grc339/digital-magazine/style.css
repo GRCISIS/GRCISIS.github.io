@@ -235,17 +235,5 @@ footer {
     background-color: rgb(117, 141, 188);
     color: rgb(244, 244, 244);
 }
-@media screen and (min-width: 35em) {
-    nav ul li {
-        display: inline-block;
-    }
 
-    h1, nav ul, p, section.mainstory h2, article h2, section.secondarystory h2, figcaption{
-        margin-left: 0;
-    }
-
-    section.tertiarystory{
-        margin: 0;
-    }
-} 
 
