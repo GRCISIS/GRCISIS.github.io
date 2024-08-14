@@ -236,4 +236,8 @@ footer {
     color: rgb(244, 244, 244);
 }
 
+@media screen and (min-width: 35em) {
+    nav ul li {
+        display: inline-block;
+    }
 
