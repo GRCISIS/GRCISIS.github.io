@@ -2,201 +2,220 @@
 
 html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit;}
 
-div.container, div.home-container {
-    max-width:40em;
-    margin: auto;
+img {
+	width: 100%;
+	display: block;
 }
 
-h1{ 
-    width: 6em;
-    margin: 1em 0.5em;
+body {
+	font-family: sans-serif;
+	background-color: #fefefe;
+	color: #252525;
 }
 
-h2{
-    color: #557799;
-    font-weight: bold;
-    margin-top: 0.25em;
+h1 {
+	width: 6em;
+	padding-bottom: 1rem;
+    padding-top: 1rem;
+	padding-left: 1em;
 }
 
 a {
-    color: #000000;
-    text-decoration: none;
+	color: #252525;
+	text-decoration: none;
 }
 
-nav ul{
-    margin: 0 0 1em 0.5em;
+div.container {
+	margin: auto;
+	max-width: 40em;
 }
 
-nav ul li{
-    list-style-type: none;
-    font-family: sans-serif;
-    font-weight: bold;
-    margin: 0.2em 0.5em 0.2em 0;
+ul {
+	list-style-type: none;
+	font-weight: bold;
+	margin: auto;
+	padding-left: 1em;
+	line-height: 1.5em;
 }
 
-nav ul li a{
-    color: #557799;
+nav ul {
+	text-align: left;
 }
 
-section {
-    padding-bottom: 1em;
+nav li {
+	margin-right: 1.25em;
 }
 
-img {
-    width: 100%;
-    display: block;
+nav a {
+	color: #557799;
+	text-decoration: none;
+	font-family: sans-serif;
 }
 
-p { 
-    font-family: sans-serif;
-    margin: 0.1em 0.5em 1em;
+h2 {
+	padding-left: 0.5em;
+	font-size: 2.5em;
+	font-weight: bold;
+	font-family: serif;
+	color: #557799;
+}
+
+section.secondary-story h2 {
+	padding-left: 0.5em;
+	font-size: 1.5em;
+}
+
+section.tertiary-story h2 {
+	padding-left: 1em;
+	font-size: 1em;
+	margin-top: 1em;
+	border-top: 2px #557799 solid;
+	padding-top: .60em;
+}
+
+figcaption {
+	padding-top: 0.25em;
+	padding-left: 1em;
+	padding-bottom: 1em;
+	font-style: italic;
+	color: #555555;
+}
+
+article h2 {
+	padding-top: 0.5em;
+	padding-bottom: 0.25em;
+	font-size: 2em;
+	font-weight: bold;
+	font-family: serif;
+	color: #557799;
+}
+
+aside h2 {
+	padding: 0;
+	font-size: 1.3em;
+}
+
+aside {
+	background-color: #c5c9fa;
+	padding: 1em;
+}
+
+p {
+	text-decoration: none;
+	padding: 0 1em 1em;
+}
+
+aside p {
+	padding-left: 0;
 }
 
 footer{
     background-color: #557799;
-    color: white;
+    color: #ffffff;
     height: 2rem;
     padding: 1em 0 0 0.5em;
 }
 
-footer p{
-    margin: 0;
-}
-
-section.mainstory h2, article h2 {
-    margin-left: 0.15em;
-    font-size: 3em;
-}
-
-section.secondarystory h2 {
-    font-size: 1.7em;
-    margin-left: 0.25em;
-}   
-
-section.tertiarystory{
-    margin: 0 0.5em;
-    border-top: 2px #557799 solid;
-}
-
-section.tertiarystory h2, aside h2{
-    font-size: 1.2em;
-}
-
-section.tertiarystory p, aside p{
-    margin-left: 0;
-}
-
-figcaption {
-    font-family: sans-serif;
-    font-style: italic;
-    color: #555555;
-    margin: 0.5em 0.5em 1.5em;
-}
-
-aside{
-    background-color: #cbcfff;
-    padding: 0.5em;
-}
-
 @media screen and (min-width: 35em) {
-    nav ul li {
-        display: inline-block;
-    }
+	nav ul li {
+		display: inline-block;
+	}
 
-    h1, nav ul, p, section.mainstory h2, article h2, section.secondarystory h2, figcaption{
-        margin-left: 0;
-    }
-
-    section.tertiarystory{
-        margin: 0;
-    }
+	h1, h2, section.secondary-story h2,section.tertiary-story h2, article h2, p, ul, figcaption {
+		padding-left: 0em;
+	}
 }
+@media only screen and (min-width: 60em) {
 
-@media only screen and (min-width: 60em){
-    div.home-container{
-        max-width: 80em;
-        padding: 0 1em;
-        display: grid;
-        grid-template-columns: 3fr 1fr;
-        grid-gap: 1em;
-    }
+	div.home-container {
+		max-width: 80em;
+		padding: 0 1em;
+		display: grid;
+		grid-template-columns: 3fr 1fr;
+		grid-gap: 1em;
+	}
 
-    div.container{
-        max-width: 60em;
-        padding: 0 1em;
-        display: grid;
-        grid-template-columns: 3fr 1fr;
-        grid-gap: 1em;
-    }
+	div.container {
+		max-width: 60em;
+		padding: 0 1em;
+		display: grid;
+		grid-template-columns: 3fr 1fr;
+		grid-gap: 1em;
+	}
 
-    header, footer{
-        grid-column: 1/3;
-    }
+	header,footer {
+		grid-column: 1/3;
+	}
 
-    div.home-container main{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 1em;
-    }
+	div.home-container main {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 1em;
+	}
 
-    div.home-container aside{
-        background: none;
-        padding-top: 0;
-    }
-    
-    section.mainstory{
-        grid-column: 2/4;
-        grid-row: 1/3;
-        display: flex;
-    }
+	div.home-container aside{
+		background: none;
+		padding: 0;
+		margin-top: 0;
+	}
 
-    section.mainstory a{
-        flex: 1 0 12em;
-        display: flex;
-        flex-direction: column;
-    }
+	div.container aside{
+		margin-top: 0;
+	}
 
-    section.mainstory a fig{
-        flex: 1 0 12em;
-        display: flex;
-    }
+	section.main-story{
+		grid-column: 2/4;
+		grid-row: 1/3;
+		display: flex;
+	}
 
-    section.mainstory a fig img{
-        object-fit: cover;
-    }
+	section.main-story a {
+		flex: 1 0 12em;
+		display: flex;
+		flex-direction: column;
+	}
 
-    section.mainstory a h2{
-        flex: 0 0 1em;
-    }
+	section.main-story a figure{
+		flex: 1 0 12em;
+		display: flex;
+	}
+	
+	section.main-story a figure img{
+		object-fit: cover;
+	}
 
-    section.mainstory a p{
-        flex: 0 0 4em;
-    }
+	section.main-story a h2{
+		flex: 0 0 1em;
+	}
 
-    section.secondarystory{
-        display: flex;
-    }
+	section.main-story a p{
+		flex: 0 0 4em;
+	}
 
-    section.secondarystory a{
-        flex: 1 0 12em;
-        display: flex;
-        flex-direction: column;
-    }
+	section.secondary-story{ 
+		display: flex;
+	}
 
-    section.secondarystory a fig{
-        flex: 1 0 12em;
-        display: flex;
-    }
+	section.secondary-story a {
+		flex: 1 0 12em;
+		display: flex;
+		flex-direction: column;
+	}
 
-    section.secondarystory a fig img{
-        object-fit: cover;
-    }
+	section.secondary-story a figure{
+		flex: 1 0 12em;
+		display: flex;
+	}
+	
+	section.secondary-story a figure img{
+		object-fit: cover;
+	}
 
-    section.secondarystory a h2{
-        flex: 0 0 1em;
-    }
+	section.secondary-story a h2{
+		flex: 0 0 1em;
+	}
 
-    section.secondarystory a p{
-        flex: 0 0 4em;
-    }
+	section.secondary-story a p{
+		flex: 0 0 4em;
+	}
 }
