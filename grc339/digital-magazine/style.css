@@ -16,7 +16,7 @@ body {
 }
 
 h1 {
-	width: 14em;
+	width: 10em;
 	padding-bottom: 1rem;
     padding-top: 1rem;
 	padding-left: 1em;
@@ -114,7 +114,7 @@ aside p {
 
 /* main story aside black background styling */ 
 
-aside { 
+div.container aside { 
 	background-color: #221f1f;
 	padding: 1em;
 }
