@@ -8,22 +8,25 @@ img {
 }
 
 body {
-	font-family: sans-serif;
-	background-color: #fefefe;
+	font-family: "nunito-sans", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	background-color: #e9e9e9;
 	color: #252525;
 }
 
 h1 {
-	width: 6em;
+	width: 16em;
 	padding-bottom: 1rem;
-        padding-top: 1rem;
+    padding-top: 1rem;
 	padding-left: 1em;
 }
 
 a {
 	color: #252525;
 	text-decoration: none;
-}
+} 
+
 
 div.container, div.home-container {
 	margin: auto;
@@ -47,28 +50,32 @@ nav li {
 }
 
 nav a {
-	color: #557799;
+	color: #f39220;
 	text-decoration: none;
-	font-family: sans-serif;
+	font-family: "fino-sans", sans-serif;
+	font-weight: 400;
+	font-style: normal; 
+	font-size: 1.2em; 
 }
 
 h2 {
 	padding-left: 0.5em;
-	font-size: 2.5em;
-	font-weight: bold;
-	font-family: serif;
-	color: #557799;
+	font-size: 2.75em;
+	font-family: "fino-sans", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	color: #f39220;
 }
 
 section.secondary-story h2 {
 	padding-left: 0.5em;
-	font-size: 1.5em;
+	font-size: 1.75em;
 }
 
 section.tertiary-story h2 {
 	padding-left: 1em;
 	font-size: 1em;
-	border-top: 1px #557799 solid;
+	border-top: 1px #221f1f solid;
 	padding-top: .60em;
 }
 
@@ -86,17 +93,14 @@ article h2 {
 	font-size: 2em;
 	font-weight: bold;
 	font-family: serif;
-	color: #557799;
+	color: #f39220;
 }
 
-aside h2 {
+/* home page aside styling */
+
+aside h2 {  
 	padding: 0;
 	font-size: 1.3em;
-}
-
-aside {
-	background-color: #c5c9fa;
-	padding: 1em;
 }
 
 p {
@@ -106,10 +110,21 @@ p {
 
 aside p {
 	padding-left: 0;
+} 
+
+/* main story aside black background styling */ 
+
+aside { 
+	background-color: #221f1f;
+	padding: 1em;
 }
 
+div.container aside p {
+    color: #FFFFFF;  
+} 
+
 footer{
-    background-color: #557799;
+    background-color: #221f1f;
     color: #ffffff;
     height: 2rem;
     padding-top: 1em;
